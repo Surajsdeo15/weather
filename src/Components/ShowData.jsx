@@ -109,7 +109,7 @@ function ShowData() {
                             <>
                                 <p className='text-2xl '>Cloudiness: {weatherData.clouds.all}%</p>
                                 <p className='text-2xl'>Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString()}</p>
-                                <p className='text-2xl '>Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString()}</p>
+                                <p className='text-2xl '>Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString()} </p>
                             </>
                         )}
                     </div>
