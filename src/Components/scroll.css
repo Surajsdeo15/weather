@@ -1,0 +1,23 @@
+.thin-scrollbar {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #12a7be #df401c; /* For Firefox */
+  }
+  
+  .thin-scrollbar::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  .thin-scrollbar::-webkit-scrollbar-track {
+    background: #10aeca; /* Background of the scrollbar track */
+  }
+  
+  .thin-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #d71818; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Roundness of the scrollbar handle */
+    border: 2px solid #128ebc; /* Padding around scrollbar handle */
+  }
+  
+  .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #14aaba; /* Handle color on hover */
+  }
+  

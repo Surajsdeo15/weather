@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './scroll.css';
 
 function ShowData() {
     const [inputValue, setInputValue] = useState('');
@@ -39,8 +40,11 @@ function ShowData() {
 
     return (
         <>
-            <div className='fixed w-full h-screen bg-gradient-to-t from-cyan-800 to-gray-800 pt-12'>
-                <div className='w-[740px] transform translate-x-64 h-10 shadow-xl shadow-cyan-700 rounded-3xl bg-gray-800 flex gap-8'>
+            <div className='fixed w-full h-screen bg-gradient-to-t from-cyan-800 to-gray-800 pt-12 text-center'>
+            <h1  className='text-8xl font-mono font-extrabold relative -left-12 -top-12 text-cyan-700 '>WEATHER</h1>
+            <h2  className='text-xl font-mono font-extrabold relative left-24 -top-12 text-cyan-400 '>.By Suraj Singh Deo</h2>
+ <div className='overflow-y-auto  h-[calc(100vh-14rem)] thin-scrollbar'>
+                <div className='w-[740px] transform translate-x-64 h-10 shadow-xl shadow-cyan-700 rounded-3xl bg-gray-800 flex gap-8 '>
                     <input
                         type="text"
                         value={inputValue}
@@ -55,9 +59,11 @@ function ShowData() {
                         Search
                     </button>
                 </div>
-                <div className='flex'>
-                    <div className='w-16 relative top-4 left-44 h-[598px] shadow-xl shadow-cyan-700 rounded-lg pt-6 bg-gray-800'></div>
+                <div className='flex '>
+                    <div className='w-16 relative top-4 left-44 h-[598px] shadow-xl shadow-cyan-700 rounded-lg pt-6 bg-gray-800 '></div>
+                  
                     <div className='flex flex-col gap-6'>
+                    
                         <div className='w-[700px] relative top-4 left-44 h-[250px] ml-12 pt-6'>
                             {weatherData ? (
                                 <div className='flex justify-between gap-4'>
@@ -113,6 +119,7 @@ function ShowData() {
                             </>
                         )}
                     </div>
+                </div>
                 </div>
             </div>
         </>
