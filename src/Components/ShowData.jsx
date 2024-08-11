@@ -6,7 +6,8 @@ function ShowData() {
     const [weatherData, setWeatherData] = useState(null);
     const [error, setError] = useState('');
 
-    const ApiKey = '30796afdb90cc0d1c4fba661ea797f8f';
+    const ApiKey = process.env.REACT_APP_API_KEY;
+   
 
     const fetchWeatherData = async (city) => {
         try {
