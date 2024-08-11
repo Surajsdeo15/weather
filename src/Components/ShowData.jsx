@@ -103,7 +103,7 @@ function ShowData() {
                             </div>
                         )}
                         {weatherData && (
-                            <div className='w-96 md:w-[700px] relative -top-5 md:top-4 md:left-44 h-[150px] rounded-3xl shadow-xl shadow-cyan-700 ml-6 md:ml-12 pt-6 bg-gray-800 flex justify-center gap-12 items-center'>
+                            <div className='w-96 md:w-[700px] relative -top-5 md:top-4 md:left-44 h-[150px] rounded-3xl shadow-xl shadow-cyan-700 ml-4 md:ml-12 pt-6 bg-gray-800 flex justify-center gap-12 items-center'>
                                 <p className='text-sm text-cyan-700 font-bold md:text-xl '> {weatherData.coord.lat}, {weatherData.coord.lon}</p>
                                 <p className='text-sm text-cyan-700 font-bold md:text-xl '> {weatherData.weather[0].main} - {weatherData.weather[0].description}</p>
                                 <p className='text-sm text-cyan-700 font-bold md:text-xl '>{(weatherData.main.temp_min - 273.15).toFixed(2)}°C / {(weatherData.main.temp_max - 273.15).toFixed(2)}°C</p>
